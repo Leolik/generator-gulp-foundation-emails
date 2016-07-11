@@ -1,0 +1,19 @@
+doctype transitional
+html(xmlns='http://www.w3.org/1999/xhtml')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')   
+    meta(name='viewport', content='width=device-width')
+    title Email Template
+    link(rel='stylesheet', href='styles/style.css', inline="")
+  body
+    block styles
+      
+    table.body
+      tr
+        td.center(align='center', valign='top')
+          center
+            
+            block content
+    
+    // prevent Gmail on iOS font size manipulation
+    div(style='display:none; white-space:nowrap; font:15px courier; line-height:0;') &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 

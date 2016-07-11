@@ -1,0 +1,151 @@
+extends layouts/_default.pug
+
+block styles
+  style.
+    body,
+    html,
+    .body {
+      background: #f3f3f3 !important;
+    }
+
+block content
+  
+  // Email content
+  
+  table.container
+    tbody
+      tr
+        td
+          table.row
+            tbody
+              tr
+                th.small-12.large-4.columns.first
+                  table
+                    tr
+                      th
+                        center(data-parsed='')
+                          img.float-center(src='http://placehold.it/125x200', align='center')
+                th.small-12.large-8.columns.last
+                  table
+                    tr
+                      th
+                        h1 Do Something Radical With This App.
+                        table.button.large
+                          tr
+                            td
+                              table
+                                tr
+                                  td
+                                    a(href='#') Sign Up
+          table.spacer
+            tbody
+              tr
+                td(height='16px', style='font-size:16px;line-height:16px;')  
+          table.row
+            tbody
+              tr
+                th.small-12.large-12.columns.first.last
+                  table
+                    tr
+                      th
+                        h3.text-center It's Never Been Easier to Do Things.
+                        p.text-center Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur unde magni repudiandae totam, accusamus facere eligendi. Ad nobis eius porro saepe et ab, aliquid, sed mollitia cumque suscipit aperiam.
+                      th.expander
+          table.row
+            tbody
+              tr
+                th.small-12.large-4.columns.first
+                  table
+                    tr
+                      th
+                        center(data-parsed='')
+                          img.float-center(src='http://placehold.it/50x50', align='center')
+                        h5.text-center Feature One
+                        p.text-center Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, quod quam unde earum.
+                th.small-12.large-4.columns
+                  table
+                    tr
+                      th
+                        center(data-parsed='')
+                          img.float-center(src='http://placehold.it/50x50', align='center')
+                        h5.text-center Feature Two
+                        p.text-center Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, quod quam unde earum.
+                th.small-12.large-4.columns.last
+                  table
+                    tr
+                      th
+                        center(data-parsed='')
+                          img.float-center(src='http://placehold.it/50x50', align='center')
+                        h5.text-center Feature Three
+                        p.text-center Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, quod quam unde earum.
+          table.spacer
+            tbody
+              tr
+                td(height='16px', style='font-size:16px;line-height:16px;')  
+          table.row
+            tbody
+              tr
+                th.small-12.large-12.columns.first.last
+                  table
+                    tr
+                      th
+                        h3.text-center What Are You Waiting For? Get Started Today.
+                        table.spacer
+                          tbody
+                            tr
+                              td(height='16px', style='font-size:16px;line-height:16px;')  
+                        table.button.large.expand
+                          tr
+                            td
+                              table
+                                tr
+                                  td
+                                    center(data-parsed='')
+                                      a.float-center(href='#', align='center') Sign Up
+                            td.expander
+                      th.expander
+          table.row.collapsed.footer
+            tbody
+              tr
+                th.small-12.large-12.columns.first.last
+                  table
+                    tr
+                      th
+                        table.spacer
+                          tbody
+                            tr
+                              td(height='16px', style='font-size:16px;line-height:16px;')  
+                        p.text-center
+                          | @copywrite nobody
+                          br
+                          a(href='#') hello@nocopywrite.com
+                          | &nbsp;|&nbsp;
+                          a(href='#') Manage Email Notifications
+                          | &nbsp;|&nbsp;
+                          a(href='#') Unsubscribe
+                        center(data-parsed='')
+                          table.menu.float-center(align='center')
+                            tr
+                              td
+                                table
+                                  tr
+                                    th.menu-item.float-center
+                                      a(href='undefined')
+                                        img(src='http://placehold.it/25', alt='')
+                                    th.menu-item.float-center
+                                      a(href='undefined')
+                                        img(src='http://placehold.it/25', alt='')
+                                    th.menu-item.float-center
+                                      a(href='undefined')
+                                        img(src='http://placehold.it/25', alt='')
+                                    th.menu-item.float-center
+                                      a(href='undefined')
+                                        img(src='http://placehold.it/25', alt='')
+                                    th.menu-item.float-center
+                                      a(href='undefined')
+                                        img(src='http://placehold.it/25', alt='')
+                      th.expander
+          table.spacer
+            tbody
+              tr
+                td(height='16px', style='font-size:16px;line-height:16px;')  

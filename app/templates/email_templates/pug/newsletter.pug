@@ -1,0 +1,71 @@
+extends layouts/_default.pug
+
+block styles
+  style.
+    body,
+    html,
+    .body {
+      background: #f3f3f3 !important;
+    }
+
+block content
+  
+  // Email content
+  
+  table.container
+    tbody
+      tr
+        td
+          table.spacer
+            tbody
+              tr
+                td(height='16px', style='font-size:16px;line-height:16px;')  
+          table.row
+            tbody
+              tr
+                th.small-12.large-12.columns.first.last
+                  table
+                    tr
+                      th
+                        h1.text-center The Insider
+                        center(data-parsed='')
+                          img.float-center(src='http://placehold.it/500x200', align='center')
+                        table.spacer
+                          tbody
+                            tr
+                              td(height='16px', style='font-size:16px;line-height:16px;')  
+                        p.lead Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa itaque illo doloribus soluta expedita dolores commodi fuga odit.
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto reiciendis eos magni deleniti accusamus tempore, consectetur! Maxime amet, exercitationem nihil fugit eius esse voluptatum ab incidunt minima, saepe reiciendis ipsum.
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto reiciendis eos magni deleniti accusamus tempore, consectetur! Maxime amet, exercitationem nihil fugit eius esse voluptatum ab incidunt minima, saepe reiciendis ipsum.
+                        table.row
+                          tbody
+                            tr
+                              th.small-12.large-6.columns.first
+                                table
+                                  tr
+                                    th
+                                      h4 More Reading:
+                                      ul
+                                        li
+                                          a(href='#') Lorem Ipsum Dolor Sit Amet
+                                        li
+                                          a(href='#') Lorem Ipsum Dolor Sit Amet
+                                        li
+                                          a(href='#') Lorem Ipsum Dolor Sit Amet
+                              th.small-12.large-6.columns.last
+                                table
+                                  tr
+                                    th
+                                      h4 Get Involved:
+                                      ul
+                                        li
+                                          a(href='#') Facebook
+                                        li
+                                          a(href='#') Twitter
+                                        li
+                                          a(href='#') Instagram
+                        p
+                          small
+                            | You received this email because you're signed up to get updates from us. 
+                            a(href='#') Click here to unsubscribe.
+  

@@ -1,0 +1,125 @@
+extends layouts/_default.pug
+
+block styles
+  style.
+    body,
+    html,
+    .body {
+      background: #f3f3f3 !important;
+    }
+
+block content
+  
+  // Email content
+  
+  table.container
+    tbody
+      tr
+        td
+          table.spacer
+            tbody
+              tr
+                td(height='16px', style='font-size:16px;line-height:16px;')  
+          table.row
+            tbody
+              tr
+                th.small-12.large-12.columns.first.last
+                  table
+                    tr
+                      th
+                        h1 Thanks for your order.
+                        p
+                          | Thanks for shopping with us! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad earum ducimus, non, eveniet neque dolores voluptas architecto sed, voluptatibus aut dolorem odio. Cupiditate a recusandae, illum cum voluptatum modi nostrum.
+                        table.spacer
+                          tbody
+                            tr
+                              td(height='16px', style='font-size:16px;line-height:16px;')  
+                        table.callout
+                          tr
+                            th.callout-inner.secondary
+                              table.row
+                                tbody
+                                  tr
+                                    th.small-12.large-6.columns.first
+                                      table
+                                        tr
+                                          th
+                                            p
+                                              strong Payment Method
+                                              br
+                                              | Dubloons
+                                            p
+                                              strong Email Address
+                                              br
+                                              | thecapn@pirates.org
+                                            p
+                                              strong Order ID
+                                              br
+                                              | 239235983749636
+                                    th.small-12.large-6.columns.last
+                                      table
+                                        tr
+                                          th
+                                            p
+                                              strong Shipping Method
+                                              br
+                                              | Boat (1–2 weeks)
+                                              br
+                                              strong Shipping Address
+                                              br
+                                              | Captain Price
+                                              br
+                                              | 123 Maple Rd
+                                              br
+                                              | Campbell, CA 95112
+                            th.expander
+                        h4 Order Details
+                        table
+                          tr
+                            th Item
+                            th #
+                            th Price
+                          tr
+                            td Ship's Cannon
+                            td 2
+                            td $100
+                          tr
+                            td Ship's Cannon
+                            td 2
+                            td $100
+                          tr
+                            td Ship's Cannon
+                            td 2
+                            td $100
+                          tr
+                            td(colspan='2')
+                              b Subtotal:
+                            td $600
+                        hr
+                        h4 What's Next?
+                        p
+                          | Our carrier raven will prepare your order for delivery. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi necessitatibus itaque debitis laudantium doloribus quasi nostrum distinctio suscipit, magni soluta eius animi voluptatem qui velit eligendi quam praesentium provident culpa?
+          table.row.footer.text-center
+            tbody
+              tr
+                th.small-12.large-3.columns.first
+                  table
+                    tr
+                      th
+                        img(src='http://placehold.it/170x30', alt='')
+                th.small-12.large-3.columns
+                  table
+                    tr
+                      th
+                        p
+                          | Call us at 800.555.1923
+                          br
+                          | Email us at support@discount.boat
+                th.small-12.large-3.columns.last
+                  table
+                    tr
+                      th
+                        p
+                          | 123 Maple Rd
+                          br
+                          | Campbell, CA 95112

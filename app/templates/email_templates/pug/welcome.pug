@@ -1,0 +1,90 @@
+extends layouts/_default.pug
+
+block styles
+  style.
+    body,
+    html,
+    .body {
+      background: #f3f3f3 !important;
+    }
+    .container.header {
+      background: #f3f3f3;
+    }
+    .body-border {
+      border-top: 8px solid #663399;
+    }
+
+block content
+  
+  // Email content
+  
+  table.container.header
+    tbody
+      tr
+        td
+          table.row
+            tbody
+              tr
+                th.small-12.large-12.columns.first.last
+                  table
+                    tr
+                      th
+                        h1.text-center Welcome to Kraken Academy
+                        center(data-parsed='')
+                          table.menu.text-center.float-center(align='center')
+                            tr
+                              td
+                                table
+                                  tr
+                                    th.menu-item.float-center
+                                      a(href='#') About
+                                    th.menu-item.float-center
+                                      a(href='#') Course List
+                                    th.menu-item.float-center
+                                      a(href='#') Campus Map
+                                    th.menu-item.float-center
+                                      a(href='#') Contact
+                      th.expander
+  table.container.body-border
+    tbody
+      tr
+        td
+          table.row
+            tbody
+              tr
+                th.small-12.large-12.columns.first.last
+                  table
+                    tr
+                      th
+                        table.spacer
+                          tbody
+                            tr
+                              td(height='32px', style='font-size:32px;line-height:32px;')  
+                        center(data-parsed='')
+                          img.float-center(src='http://placehold.it/200x200', align='center')
+                        table.spacer
+                          tbody
+                            tr
+                              td(height='16px', style='font-size:16px;line-height:16px;')  
+                        h4 An exciting future of terrorizing sailors awaits you at Kraken Academy.
+                        p
+                          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque culpa vel architecto, perspiciatis eius cum autem quidem, sunt consequuntur, impedit dolor vitae illum nobis sint nihil aliquid? Assumenda, amet, officia.
+                        center(data-parsed='')
+                          table.menu.float-center(align='center')
+                            tr
+                              td
+                                table
+                                  tr
+                                    th.menu-item.float-center
+                                      a(href='#') krakenacademy.com
+                                    th.menu-item.float-center
+                                      a(href='#') Facebook
+                                    th.menu-item.float-center
+                                      a(href='#') Twitter
+                                    th.menu-item.float-center
+                                      a(href='#') (408)-555-0123
+                      th.expander
+          table.spacer
+            tbody
+              tr
+                td(height='16px', style='font-size:16px;line-height:16px;')

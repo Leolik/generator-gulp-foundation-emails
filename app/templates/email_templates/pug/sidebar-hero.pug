@@ -1,0 +1,200 @@
+extends layouts/_default.pug
+
+block styles
+  style.
+    .header {
+      background: #8a8a8a;
+    }
+    .header .columns {
+      padding-bottom: 0;
+    }
+    .header p {
+      color: #fff;
+      padding-top: 15px;
+    }
+    .header .wrapper-inner {
+      padding: 20px;
+    }
+    .header .container {
+      background: transparent;
+    }
+    table.button.facebook table td {
+      background: #3B5998 !important;
+      border-color: #3B5998;
+    }
+    table.button.twitter table td {
+      background: #1daced !important;
+      border-color: #1daced;
+    }
+    table.button.google table td {
+      background: #DB4A39 !important;
+      border-color: #DB4A39;
+    }
+    .wrapper.secondary {
+      background: #f3f3f3;
+    }
+    .sidebar .menu .menu-item {
+      border-top: 1px solid #777777;
+    }
+
+block content
+  
+  // Email content
+  
+  table.wrapper.header(align='center')
+    tr
+      td.wrapper-inner
+        table.container
+          tbody
+            tr
+              td
+                table.row.collapse
+                  tbody
+                    tr
+                      th.small-6.large-6.columns.first
+                        table
+                          tr
+                            th
+                              img(src='http://placehold.it/200x50/663399')
+                      th.small-6.large-6.columns.last
+                        table
+                          tr
+                            th
+                              p.text-right SIDEBAR HERO
+  table.container
+    tbody
+      tr
+        td
+          table.spacer
+            tbody
+              tr
+                td(height='16px', style='font-size:16px;line-height:16px;')  
+          table.row
+            tbody
+              tr
+                th.small-12.large-12.columns.first.last
+                  table
+                    tr
+                      th
+                        h1 Hi, Elijah Baily
+                        p.lead
+                          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi impedit sapiente delectus molestias quia.
+                        center(data-parsed='')
+                          img.float-center(src='http://placehold.it/570x300', alt='', align='center')
+                        table.callout
+                          tr
+                            th.callout-inner.primary
+                              p
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda, praesentium qui vitae voluptate dolores. 
+                                a(href='#') Click it!
+                            th.expander
+                      th.expander
+          table.row
+            tbody
+              tr
+                th.small-12.large-7.columns.first
+                  table
+                    tr
+                      th
+                        h3 Hello, Han Fastolfe
+                        p
+                          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam nobis velit, aliquid pariatur at fugit. Omnis at quae, libero iusto quisquam animi blanditiis neque, alias minima corporis, ab in explicabo?
+                        p
+                          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime dignissimos voluptas minus, cupiditate voluptatem, voluptatum iste molestiae consectetur temporibus quae dolore nam possimus reprehenderit blanditiis laborum iusto sit. Perspiciatis, dolor.
+                        table.callout
+                          tr
+                            th.callout-inner.secondary
+                              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quas optio totam quidem, placeat sunt, sit iusto fugit. Harum omnis deleniti enim nihil iure, quis laudantium veniam velit animi debitis. 
+                              a(href='#') Click It!
+                            th.expander
+                        p
+                          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores minus eius amet alias odit accusantium, fugit perspiciatis nulla suscipit nisi. Laborum aliquid, voluptatum consectetur fugiat maxime architecto enim molestias aperiam!
+                        p
+                          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex eveniet veritatis, magnam ipsam et vero necessitatibus. Deserunt facilis impedit, adipisci illo laboriosam assumenda fugiat dolorum nam odio aliquid, sit est.
+                        table.button.expand
+                          tr
+                            td
+                              table
+                                tr
+                                  td
+                                    center(data-parsed='')
+                                      a.float-center(href='#', align='center') Click Me!
+                            td.expander
+                th.sidebar.small-12.large-5.columns.last
+                  table
+                    tr
+                      th
+                        table.callout
+                          tr
+                            th.callout-inner.secondary
+                              h5 Header
+                              p.lead Sub-header
+                              table.menu.vertical
+                                tr
+                                  td
+                                    table
+                                      tr
+                                        th.menu-item
+                                          a(href='#') Just a Plain Link »
+                                        th.menu-item
+                                          a(href='#') Just a Plain Link »
+                                        th.menu-item
+                                          a(href='#') Just a Plain Link »
+                                        th.menu-item
+                                          a(href='#') Just a Plain Link »
+                                        th.menu-item
+                                          a(href='#') Just a Plain Link »
+                                        th.menu-item
+                                          a(href='#') Just a Plain Link »
+                                        th.menu-item
+                                          a(href='#') Just a Plain Link »
+                            th.expander
+                        table.callout
+                          tr
+                            th.callout-inner.secondary
+                              h6 CONNECT WITH US:
+                              table.button.facebook.expand
+                                tr
+                                  td
+                                    table
+                                      tr
+                                        td
+                                          center(data-parsed='')
+                                            a.float-center(href='#', align='center') Facebook
+                                  td.expander
+                              table.button.twitter.expand
+                                tr
+                                  td
+                                    table
+                                      tr
+                                        td
+                                          center(data-parsed='')
+                                            a.float-center(href='#', align='center') Twitter
+                                  td.expander
+                              table.button.google.expand
+                                tr
+                                  td
+                                    table
+                                      tr
+                                        td
+                                          center(data-parsed='')
+                                            a.float-center(href='#', align='center') Google+
+                                  td.expander
+                              p CONTACT INFO:
+                              p Phone: 408-341-0600
+                              p
+                                | Email: 
+                                a(href='mailto:foundation@zurb.com') foundation@zurb.com
+                            th.expander
+          center(data-parsed='')
+            table.menu.float-center(align='center')
+              tr
+                td
+                  table
+                    tr
+                      th.menu-item.float-center
+                        a(href='#') Terms
+                      th.menu-item.float-center
+                        a(href='#') Privacy
+                      th.menu-item.float-center
+                        a(href='#') Unsubscribe

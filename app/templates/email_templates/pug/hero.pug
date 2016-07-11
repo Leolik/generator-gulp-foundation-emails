@@ -1,0 +1,162 @@
+extends layouts/_default.pug
+
+block styles
+  style.
+    .header {
+      background: #8a8a8a;
+    }
+    .header .columns {
+      padding-bottom: 0;
+    }
+    .header p {
+      color: #fff;
+      padding-top: 15px;
+    }
+    .header .wrapper-inner {
+      padding: 20px;
+    }
+    .header .container {
+      background: transparent;
+    }
+    table.button.facebook table td {
+      background: #3B5998 !important;
+      border-color: #3B5998;
+    }
+    table.button.twitter table td {
+      background: #1daced !important;
+      border-color: #1daced;
+    }
+    table.button.google table td {
+      background: #DB4A39 !important;
+      border-color: #DB4A39;
+    }
+    .wrapper.secondary {
+      background: #f3f3f3;
+    }
+
+block content
+  
+  // Email content
+  
+  table.wrapper.header(align='center')
+    tr
+      td.wrapper-inner
+        table.container
+          tbody
+            tr
+              td
+                table.row.collapse
+                  tbody
+                    tr
+                      th.small-6.large-6.columns.first
+                        table
+                          tr
+                            th
+                              img(src='http://placehold.it/200x50/663399')
+                      th.small-6.large-6.columns.last
+                        table
+                          tr
+                            th
+                              p.text-right HERO
+  table.container
+    tbody
+      tr
+        td
+          table.spacer
+            tbody
+              tr
+                td(height='16px', style='font-size:16px;line-height:16px;')  
+          table.row
+            tbody
+              tr
+                th.small-12.large-12.columns.first.last
+                  table
+                    tr
+                      th
+                        h1 Hi, Elijah Baily
+                        p.lead
+                          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi impedit sapiente delectus molestias quia.
+                        img(src='http://placehold.it/580x300', alt='')
+                        table.callout
+                          tr
+                            th.callout-inner.primary
+                              p
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda, praesentium qui vitae voluptate dolores. 
+                                a(href='#') Click it!
+                            th.expander
+                        h2
+                          | Title Ipsum 
+                          small This is a note.
+                        p
+                          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi repellat, harum. Quas nobis id aut, aspernatur, sequi tempora laborum corporis cum debitis, ullam, dolorem dolore quisquam aperiam! Accusantium, ullam, nesciunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus consequuntur commodi, aut sed, quas quam optio accusantium recusandae nesciunt, architecto veritatis. Voluptatibus sunt esse dolor ipsum voluptates, assumenda quisquam.
+                        table.button.large.secondary
+                          tr
+                            td
+                              table
+                                tr
+                                  td
+                                    a(href='#') Click Me!
+                      th.expander
+          table.wrapper.secondary(align='center')
+            tr
+              td.wrapper-inner
+                table.spacer
+                  tbody
+                    tr
+                      td(height='16px', style='font-size:16px;line-height:16px;')  
+                table.row
+                  tbody
+                    tr
+                      th.small-12.large-6.columns.first
+                        table
+                          tr
+                            th
+                              h5 Connect With Us:
+                              table.button.facebook.expand
+                                tr
+                                  td
+                                    table
+                                      tr
+                                        td
+                                          center(data-parsed='')
+                                            a.float-center(href='#', align='center') Facebook
+                                  td.expander
+                              table.button.twitter.expand
+                                tr
+                                  td
+                                    table
+                                      tr
+                                        td
+                                          center(data-parsed='')
+                                            a.float-center(href='#', align='center') Twitter
+                                  td.expander
+                              table.button.google.expand
+                                tr
+                                  td
+                                    table
+                                      tr
+                                        td
+                                          center(data-parsed='')
+                                            a.float-center(href='#', align='center') Google+
+                                  td.expander
+                      th.small-12.large-6.columns.last
+                        table
+                          tr
+                            th
+                              h5 Contact Info:
+                              p Phone: 408-341-0600
+                              p
+                                | Email: 
+                                a(href='mailto:foundation@zurb.com') foundation@zurb.com
+          center(data-parsed='')
+            table.menu.float-center(align='center')
+              tr
+                td
+                  table
+                    tr
+                      th.menu-item.float-center
+                        a(href='#') Terms
+                      th.menu-item.float-center
+                        a(href='#') Privacy
+                      th.menu-item.float-center
+                        a(href='#') Unsubscribe

@@ -1,0 +1,52 @@
+{
+  "name": "generator-gulp-foundation-emails",
+  "version": "0.1.0",
+  "description": "Yeoman generator for responsive html emails using Zurb Foundation for Emails 2 framework",
+  "keywords": [
+    "yeoman-generator",
+    "generator",
+    "foundation",
+    "ink",
+    "zurb",
+    "email",
+    "responsive",
+    "html",
+    "jade",
+    "sass",
+    "inline"
+  ],
+  "homepage": "https://github.com/Leolik/generator-gulp-foundation-emails",
+  "bugs": "https://github.com/Leolik/generator-gulp-foundation-emails/issues",
+  "author": {
+    "name": "Roman Sukochev",
+    "email": "rsukochev@yandex.com",
+    "url": "http://rsukochev.name"
+  },
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Leolik/generator-gulp-foundation-emails.git"
+  },
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "lodash": "^4.13.1",
+    "mkdirp": "^0.5.1",
+    "yeoman-generator": "^0.23.4",
+    "yosay": "^1.2.0"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  },
+  "engines": {
+    "node": ">=2.0.0",
+    "npm": ">=2.0.0"
+  },
+  "licenses": [
+    {
+      "type": "The Unlicense"
+    }
+  ],
+  "files": [
+    "app"
+  ]
+}
