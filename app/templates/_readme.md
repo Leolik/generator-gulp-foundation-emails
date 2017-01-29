@@ -25,16 +25,10 @@ npm run build
 ## Built-in features
 
 * ZURB Foundation for Emails 2 responsive email templates
-<% if (sass) { %>* ZURB Foundation for Emails 2 SCSS<% } else { %>* ZURB Foundation for Emails 2 CSS<% } %>
 * Webserver with liverelaod
-<% if (htmlFramework === "pug") { %>* Pug (Jade) template engine<% } %>
-<% if (htmlFramework === "inky") { %>* Inky + Panini template engine<% } %>
-<% if (sass) { %>* Sass compilation<% } %>
-* CSS concating and inlining
-
-## Notes
-
-Media queries should be revisited, because all of them are inlined into head.
+<% if (sass) { %>* Sass compilation (SCSS)<% } %>
+<% if (htmlFramework === "html") { %>* CSS concating and inlining<% } %>
+* Minifying images
 
 ---
 

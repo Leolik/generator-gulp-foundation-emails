@@ -1,15 +1,15 @@
 'use strict';
 
 var gulp = require('gulp');
-
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 <% if (htmlFramework === "pug") { %>var pug = require('gulp-pug');
 <% } else if (htmlFramework === "inky") { %>var panini = require('panini');
-var inky = require('inky');<% } %>
-<% if (sass) { %>var sass = require('gulp-sass');
-var sourcemaps = require('gulp-sourcemaps');<% } else { %>
-var concat = require('gulp-concat');<% } %>
+var fs = require('fs');
+var replace = require('gulp-replace');
+var siphon = require('siphon-media-query');
+var inky = require('inky'); <% } if (sass) { %>var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');<% } else { %>var concat = require('gulp-concat');<% } %>
 var inlineCss = require('gulp-inline-css');
 var inlineSource = require('gulp-inline-source');
 var rename = require('gulp-rename');
@@ -37,13 +37,21 @@ gulp.task('styles', function() {
 <% } %>
 
 gulp.task('inline', ['styles'<% if (htmlFramework !== "html") { %>, '<%= htmlFramework %>' <% } %>], function() {
+  <% if (htmlFramework === "inky") { %>
+  var css = fs.readFileSync('./app/styles/style.css').toString();
+  var mqCss = siphon(css);
+  <% } %>
   return gulp.src('app/*.html')
     .pipe(inlineSource({
       rootpath: 'app'
     }))
     .pipe(inlineCss({
-      preserveMediaQueries: true
+      removeStyleTags: true,
+      preserveMediaQueries: true,
+      removeLinkTags: false
     }))
+    <% if (htmlFramework === "inky") { %>.pipe(replace('<!-- <style> -->', '<style>'+ mqCss +'</style>'))
+    .pipe(replace('<link rel="stylesheet" type="text/css" href="styles/style.css">', ''))<% } %>
     .pipe(gulpif(argv.minify, htmlmin({
       collapseWhitespace: true,
       minifyCSS: true
