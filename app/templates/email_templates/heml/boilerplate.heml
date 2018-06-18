@@ -1,0 +1,11 @@
+<heml>
+  <head>
+    <subject>Email Template</subject>
+    <style></style>
+  </head>
+  <body>
+    <container>
+      <!-- Email content-->
+    </container>
+  </body>
+</heml>

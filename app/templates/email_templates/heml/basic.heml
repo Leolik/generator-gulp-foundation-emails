@@ -1,0 +1,233 @@
+<heml>
+  <head>
+    <subject>Email Template</subject>
+    <style>
+      body,
+      table.body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      td,
+      th,
+      a {
+        color: #0a0a0a;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        padding: 0;
+        margin: 0;
+        Margin: 0;
+        text-align: left;
+        line-height: 1.3; }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: inherit;
+        word-wrap: normal;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        margin-bottom: 10px;
+        Margin-bottom: 10px; }
+      h1 {
+        font-size: 34px; }
+      h2 {
+        font-size: 30px; }
+      h3 {
+        font-size: 28px; }
+      h4 {
+        font-size: 24px; }
+      h5 {
+        font-size: 20px; }
+      h6 {
+        font-size: 18px; }
+      body,
+      p,
+      td,
+      th {
+        font-size: 16px;
+        line-height: 19px; }
+      p {
+        margin-bottom: 10px;
+      }
+      p.lead {
+        font-size: 20px;
+        line-height: 1.6;
+      }
+      small {
+        font-size: 80%;
+        color: #cacaca; }
+      a {
+        color: #2199e8;
+        text-decoration: none; }
+      a:hover {
+        color: #147dc2; }
+      a:active {
+        color: #147dc2; }
+      a:visited {
+        color: #2199e8; }
+
+      .body {
+        background: #f3f3f3;
+      }
+      .main {
+        background: #fefefe;
+      }
+      .content {
+        padding: 0 16px 16px;
+      }
+      .callout {
+        margin-bottom: 10px;
+      }
+      th.callout-inner {
+        width: 100%;
+        border: 1px solid #cbcbcb;
+        padding: 10px;
+        background: #fefefe; }
+      th.callout-inner.primary {
+        background: #def0fc;
+        border: 1px solid #444444;
+        color: #0a0a0a; }
+      th.callout-inner.secondary {
+        background: #ebebeb;
+        border: 1px solid #444444;
+        color: #0a0a0a; }
+      th.callout-inner.success {
+        background: #e1faea;
+        border: 1px solid #1b9448;
+        color: #fefefe; }
+      th.callout-inner.warning {
+        background: #fff3d9;
+        border: 1px solid #996800;
+        color: #fefefe; }
+      th.callout-inner.alert {
+        background: #fce6e2;
+        border: 1px solid #b42912;
+        color: #fefefe; }
+      .expander,
+      .expander {
+        visibility: hidden;
+        width: 0;
+        padding: 0 !important; }
+
+      ._header {
+        background: #8a8a8a;
+      }
+      ._header container {
+        padding: 20px 0;
+      }
+      ._header .columns {
+        padding-bottom: 0;
+      }
+      ._header p {
+        color: #fff;
+        padding-top: 15px;
+      }
+      ._header .wrapper-inner {
+        padding: 20px;
+      }
+      ._header .container {
+        background: transparent;
+      }
+      button.facebook {
+        background: #3B5998 !important;
+        border-color: #3B5998;
+      }
+      button.twitter {
+        background: #1daced !important;
+        border-color: #1daced;
+      }
+      button.google {
+        background: #DB4A39 !important;
+        border-color: #DB4A39;
+      }
+      button {
+        border-radius: 0;
+        font-weight: bold;
+        line-height: 19px;
+        padding: 10px 16px 10px 16px;
+      }
+      button.expand .button__table {
+        width: 100% !important;
+        margin-bottom: 16px;
+      }
+      .secondary,
+      .secondary container {
+        background: #f3f3f3 !important;
+      }
+      .secondary column {
+        padding: 0 16px 16px;
+      }
+      .spacer {
+        height: 16px;
+        font-size: 16px;
+        line-height: 16px;
+      }
+      .text-right {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+
+    <block class="wrapper _header">
+      <container>
+        <row class="collapse">
+          <column small="6">
+            <img src="http://placehold.it/200x50/663399">
+          </column>
+          <column small="6">
+            <p class="text-right">BASIC</p>
+          </column>
+        </row>
+      </container>
+    </block>
+
+    <container class="main">
+      <block class="spacer"></block>
+      <row class="content">
+        <column small="12">
+          <h1>Hi, Susan Calvin</h1>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, iste, amet consequatur a veniam.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut optio nulla et, fugiat. Maiores accusantium nostrum asperiores provident, quam modi ex inventore dolores id aspernatur architecto odio minima perferendis, explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quos quasi itaque beatae natus fugit provident delectus, magnam laudantium odio corrupti sit quam. Optio aut ut repudiandae velit distinctio asperiores?</p>
+          <table class="callout">
+            <tr>
+              <th class="callout-inner primary">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit repellendus natus,
+                  sint ea optio dignissimos asperiores inventore a molestiae dolorum placeat repellat
+                  excepturi mollitia ducimus unde doloremque ad, alias eos!</p>
+              </th>
+              <th class="expander"></th>
+            </tr>
+          </table>
+        </column>
+      </row>
+
+      <block class="wrapper secondary">
+        <container>
+          <block class="spacer"></block>
+          <row>
+            <column large="6">
+              <h5>Connect With Us:</h5>
+              <button class="facebook expand" href="http://zurb.com">Facebook</button>
+              <button class="twitter expand" href="http://zurb.com">Twitter</button>
+              <button class="google expand" href="http://zurb.com">Google+</button>
+            </column>
+            <column large="6">
+              <h5>Contact Info:</h5>
+              <p>Phone: 408-341-0600</p>
+              <p>Email: <a href="mailto:foundation@zurb.com">foundation@zurb.com</a></p>
+            </column>
+            <block class="expander"></block>
+          </row>
+        </container>
+      </block>
+
+    </container>
+  </body>
+</heml>

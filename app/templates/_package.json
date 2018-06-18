@@ -3,28 +3,31 @@
   "version": "0.0.1",
   "description": "<%= name %> description",
   "author": "",
-  "devDependencies": {
-    "browser-sync": "~2.13.0",
-    "del": "~2.2.1",
+  "devDependencies": {<% if (htmlFramework !== 'heml') { %>
+    "browser-sync": "~2.24.4",
+    "del": "~3.0.0",
     "gulp": "~3.9.1",
-    "gulp-concat": "~2.6.0",
-    "gulp-inline-css": "~2.0.0",
-    "gulp-imagemin": "^3.0.1",
-    "gulp-htmlmin": "^2.0.0",
-    "gulp-if": "^2.0.1",
-    "gulp-inline-source": "~1.2.0",<% if (sass) { %>
+    "gulp-concat": "~2.6.1",
+    "gulp-inline-css": "~3.3.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-inline-source": "~3.1.0",
+    "gulp-rename": "~1.3.0",<% } %><% if (sass) { %>
     "gulp-sourcemaps": "~1.6.0",
-    "gulp-sass": "^2.3.2",<% } %>
-    "gulp-rename": "~1.2.2",<% if (htmlFramework === "pug") { %>
-    "gulp-pug": "^3.0.3",<% } else if (htmlFramework === "inky") { %>
+    "gulp-sass": "^2.3.2",<% } %><% if (htmlFramework === 'pug') { %>
+    "gulp-pug": "^3.0.3",<% } else if (htmlFramework === 'inky') { %>
     "inky": "^1.3.6",
     "gulp-replace": "^0.5.4",
     "siphon-media-query": "^1.0.0",
-    "panini": "^1.3.0",<% } %>
-    "yargs": "^4.8.0"
+    "panini": "^1.3.0",<% } %><% if (htmlFramework === 'heml') { %>
+    "heml": "^1.1.3"<% } else { %>
+    "yargs": "^11.0.0"<% } %>
   },
-  "scripts": {
+  "scripts": {<% if (htmlFramework === 'heml') { %>
+    "serve": "heml develop app/index.heml --open",
+    "build": "heml build app/index.heml"<% } else { %>
     "serve": "gulp serve",
-    "build": "gulp build --minify"
+    "build": "gulp build --minify"<% } %>
   }
 }

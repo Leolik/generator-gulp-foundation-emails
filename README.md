@@ -21,6 +21,9 @@
 1. [Pug (Jade)](https://pugjs.org) template engine
 2. Inky + Panini template engine ([ZURB framework](http://foundation.zurb.com/emails.html))
 3. Pure HTML
+4. HEML (with inline css only)
+<!-- 5. Cerberus
+6. mjml -->
 
 ## Built-in features
 
