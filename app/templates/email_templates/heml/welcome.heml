@@ -1,0 +1,166 @@
+<heml>
+  <head>
+    <subject>Email Template</subject>
+    <style>
+      body,
+      table.body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      td,
+      th,
+      a {
+        color: #0a0a0a;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        line-height: 1.3; }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: inherit;
+        word-wrap: normal;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        margin-bottom: 10px; }
+      h1 {
+        font-size: 34px; }
+      h2 {
+        font-size: 30px; }
+      h3 {
+        font-size: 28px; }
+      h4 {
+        font-size: 24px; }
+      h5 {
+        font-size: 20px; }
+      h6 {
+        font-size: 18px; }
+      body,
+      p,
+      td,
+      th {
+        font-size: 16px;
+        line-height: 19px; }
+      p {
+        margin-bottom: 10px;
+      }
+      p.lead {
+        font-size: 20px;
+        line-height: 1.6;
+      }
+      small {
+        font-size: 80%;
+        color: #cacaca; }
+      a {
+        color: #2199e8;
+        text-decoration: none; }
+      a:hover {
+        color: #147dc2; }
+      a:active {
+        color: #147dc2; }
+      a:visited {
+        color: #2199e8; }
+      .body {
+        background: #f3f3f3;
+      }
+      container.wrapper.header {
+        background: #f3f3f3;
+      }
+      container.body-border {
+        background: #fefefe;
+        border-top: 8px solid #663399;
+      }
+      container.body-border column {
+        padding: 0 16px 16px;
+      }
+      .socials td{
+        padding: 10px;
+      }
+      .spacer {
+        height: 16px;
+        font-size: 16px;
+        line-height: 16px;
+      }
+      .links {
+        text-align: center;
+      }
+      .links td {
+        padding: 10px;
+      }
+      .text-center {
+        text-align: center;
+      }
+      @media only screen and (max-width: 596px) {
+        .links td {
+          display: block;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <container class="wrapper header">
+      <row>
+        <column>
+          <h1 class="text-center">Welcome to Kraken Academy</h1>
+
+          <center>
+            <table class="links text-center">
+              <tr>
+                <td><a href="#">About</a></td>
+                <td><a href="#">Course List</a></td>
+                <td><a href="#">Campus Map</a></td>
+                <td><a href="#">Contact</a></td>
+              </tr>
+            </table>
+          </center>
+
+          <block class="spacer"></block>
+
+        </column>
+      </row>
+    </container>
+
+    <container class="body-border">
+      <row>
+        <column>
+          <block class="spacer"></block>
+          <block class="spacer"></block>
+
+          <center>
+            <img src="http://placehold.it/200x200">
+          </center>
+
+          <block class="spacer"></block>
+
+          <h4>An exciting future of terrorizing sailors awaits you at Kraken Academy.</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque culpa vel architecto, perspiciatis eius cum autem quidem, sunt consequuntur, impedit dolor vitae illum nobis sint nihil aliquid? Assumenda, amet, officia.</p>
+
+          <center>
+            <table class="links">
+              <tr>
+                <td><a href="#">krakenacademy.com</a></td>
+                <td><a href="#">Facebook</a></td>
+                <td><a href="#">Twitter</a></td>
+                <td><a href="#">(408)-555-0123</a></td>
+              </tr>
+            </table>
+          </center>
+
+        </column>
+      </row>
+
+      <block class="spacer"></block>
+    </container>
+  </body>
+</heml>
+  

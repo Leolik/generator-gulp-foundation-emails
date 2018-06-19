@@ -17,7 +17,7 @@ For project development with livereload run:
 npm run serve
 ```
 
-To build project run: (Result will be in ```dist/``` folder.)
+To build project run: (Result will be in ```<% if (htmlFramework === 'heml') { %>app/<% } else { %>dist/<% } %>``` folder.)
 ```
 npm run build
 ```
@@ -25,9 +25,10 @@ npm run build
 ## Built-in features
 
 * ZURB Foundation for Emails 2 responsive email templates
-* Webserver with liverelaod
-<% if (sass) { %>* Sass compilation (SCSS)<% } %>
-<% if (htmlFramework === "html") { %>* CSS concating and inlining<% } %>
+* Webserver with livereload<% if (sass) { %>
+* Sass compilation (SCSS)<% } %><% if (htmlFramework === 'html') { %>
+* CSS concating and inlining<% } else if (htmlFramework === 'heml') { %>
+* CSS inlining<% } %>
 * Minifying images
 
 ---

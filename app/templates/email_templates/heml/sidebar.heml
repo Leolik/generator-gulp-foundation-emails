@@ -1,0 +1,330 @@
+<heml>
+  <head>
+    <subject>Email Template</subject>
+    <style>
+      body,
+      table.body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      td,
+      th,
+      a {
+        color: #0a0a0a;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        line-height: 1.3; }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: inherit;
+        word-wrap: normal;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        margin-bottom: 10px; }
+      h1 {
+        font-size: 34px; }
+      h2 {
+        font-size: 30px; }
+      h3 {
+        font-size: 28px; }
+      h4 {
+        font-size: 24px; }
+      h5 {
+        font-size: 20px; }
+      h6 {
+        font-size: 18px; }
+      body,
+      p,
+      td,
+      th {
+        font-size: 16px;
+        line-height: 19px; }
+      p {
+        margin-bottom: 10px;
+      }
+      p.lead {
+        font-size: 20px;
+        line-height: 1.6;
+      }
+      small {
+        font-size: 80%;
+        color: #cacaca; }
+      a {
+        color: #2199e8;
+        text-decoration: none; }
+      a:hover {
+        color: #147dc2; }
+      a:active {
+        color: #147dc2; }
+      a:visited {
+        color: #2199e8; }
+        .body {
+        background: #f3f3f3;
+      }
+      container.main {
+        background: #fefefe;
+        padding: 16px;
+      }
+      .content column {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .content column.first {
+        padding-left: 0;
+      }
+      .content column.last {
+        padding-right: 0;
+      }
+      .callout {
+        margin-bottom: 16px;
+        border-collapse: collapse;
+      }
+      th.callout-inner {
+        width: 100%;
+        border: 1px solid #cbcbcb;
+        padding: 10px;
+        background: #fefefe; }
+      th.callout-inner.primary {
+        background: #def0fc;
+        border: 1px solid #444444;
+        color: #0a0a0a; }
+      th.callout-inner.secondary {
+        background: #ebebeb;
+        border: 1px solid #444444;
+        color: #0a0a0a; }
+      th.callout-inner.success {
+        background: #e1faea;
+        border: 1px solid #1b9448;
+        color: #fefefe; }
+      th.callout-inner.warning {
+        background: #fff3d9;
+        border: 1px solid #996800;
+        color: #fefefe; }
+      th.callout-inner.alert {
+        background: #fce6e2;
+        border: 1px solid #b42912;
+        color: #fefefe; }
+      .expander,
+      .expander {
+        visibility: hidden;
+        width: 0;
+        padding: 0 !important; }
+
+      .wrapper.header {
+        background: #8a8a8a;
+      }
+      .wrapper.header container {
+        padding: 20px 0;
+      }
+      .wrapper.header .columns {
+        padding-bottom: 0;
+      }
+      .wrapper.header p {
+        color: #fff;
+        padding-top: 15px;
+      }
+      .wrapper.header .wrapper-inner {
+        padding: 20px;
+      }
+      .wrapper.header .container {
+        background: transparent;
+      }
+      .callout {
+        margin-bottom: 16px;
+        border-collapse: collapse;
+      }
+      th.callout-inner {
+        width: 100%;
+        border: 1px solid #cbcbcb;
+        padding: 10px;
+        background: #fefefe; }
+      th.callout-inner.primary {
+        background: #def0fc;
+        border: 1px solid #444444;
+        color: #0a0a0a; }
+      th.callout-inner.secondary {
+        background: #ebebeb;
+        border: 1px solid #444444;
+        color: #0a0a0a; }
+      th.callout-inner.success {
+        background: #e1faea;
+        border: 1px solid #1b9448;
+        color: #fefefe; }
+      th.callout-inner.warning {
+        background: #fff3d9;
+        border: 1px solid #996800;
+        color: #fefefe; }
+      th.callout-inner.alert {
+        background: #fce6e2;
+        border: 1px solid #b42912;
+        color: #fefefe; }
+      .expander,
+      .expander {
+        visibility: hidden;
+        width: 0;
+        padding: 0 !important; }
+      button {
+        border-radius: 0;
+        font-weight: bold;
+        line-height: 19px;
+        padding: 10px 16px 10px 16px;
+        margin-bottom: 16px;
+      }
+      button.facebook {
+        background: #3B5998 !important;
+        border-color: #3B5998;
+      }
+      button.twitter {
+        background: #1daced !important;
+        border-color: #1daced;
+      }
+      button.google {
+        background: #DB4A39 !important;
+        border-color: #DB4A39;
+      }
+      button.expand .button__table {
+        width: 100% !important;
+      }
+      .spacer {
+        height: 16px;
+        font-size: 16px;
+        line-height: 16px;
+      }
+      .text-right {
+        text-align: right;
+      }
+      .links {
+        text-align: center;
+      }
+      .links td {
+        padding: 10px 10px 0 10px;
+      }
+      .vertical {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .vertical td {
+        padding: 10px;
+        border-top: 1px solid #777777;
+      }
+      @media only screen and (max-width: 596px) {
+        .content column {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+        .links td {
+          display: block;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <block class="wrapper header">
+      <container>
+        <row class="collapse">
+          <column small="6">
+            <img src="http://placehold.it/200x50/663399">
+          </column>
+          <column small="6">
+            <p class="text-right">SIDEBAR</p>
+          </column>
+        </row>
+      </container>
+    </block>
+
+    <container class="main">
+      <block class="spacer"></block>
+
+      <row class="content">
+        <column large="7" class="first">
+          <h2>Hello, Han Fastolfe</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam nobis velit, aliquid pariatur at fugit. Omnis at quae, libero iusto quisquam animi blanditiis neque, alias minima corporis, ab in explicabo?</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime dignissimos voluptas minus, cupiditate voluptatem, voluptatum iste molestiae consectetur temporibus quae dolore nam possimus reprehenderit blanditiis laborum iusto sit. Perspiciatis, dolor.</p>
+          <table class="callout">
+            <tr>
+              <th class="callout-inner secondary">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quas optio totam quidem, placeat sunt, sit iusto fugit. Harum omnis deleniti enim nihil iure, quis laudantium veniam velit animi debitis. <a href="#">Click It!</a>
+              </th>
+              <th class="expander"></th>
+            </tr>
+          </table>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores minus eius amet alias odit accusantium, fugit perspiciatis nulla suscipit nisi. Laborum aliquid, voluptatum consectetur fugiat maxime architecto enim molestias aperiam!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex eveniet veritatis, magnam ipsam et vero necessitatibus. Deserunt facilis impedit, adipisci illo laboriosam assumenda fugiat dolorum nam odio aliquid, sit est.</p>
+          <button class="expand" href="#">Click Me!</button>
+        </column>
+        <column large="5" class="sidebar last">
+          <table class="callout">
+            <tr>
+              <th class="callout-inner secondary">
+                <h5>Header</h5>
+                <p class="lead">Sub-header</p>
+                <table class="vertical">
+                  <tr>
+                    <td><a href="#">Just a Plain Link &raquo;</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Just a Plain Link &raquo;</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Just a Plain Link &raquo;</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Just a Plain Link &raquo;</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Just a Plain Link &raquo;</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Just a Plain Link &raquo;</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Just a Plain Link &raquo;</a></td>
+                  </tr>
+                </table>
+              </th>
+              <th class="expander"></th>
+            </tr>
+          </table>
+          <table class="callout">
+            <tr>
+              <th class="callout-inner secondary">
+                <h6>CONNECT WITH US:</h6>
+                <button class="facebook expand" href="#">Facebook</button>
+                <button class="twitter expand" href="#">Twitter</button>
+                <button class="google expand" href="#">Google+</button>
+                <p>CONTACT INFO:</p>
+                <p>Phone: 408-341-0600</p>
+                <p>Email: <a href="mailto:foundation@zurb.com">foundation@zurb.com</a></p>
+              </th>
+              <th class="expander"></th>
+            </tr>
+          </table>
+        </column>
+      </row>
+
+      <container>
+        <table class="links">
+          <tr>
+            <td><a href="#">Terms</a></td>
+            <td><a href="#">Privacy</a></td>
+            <td><a href="#">Unsubscribe</a></td>
+          </tr>
+        </table>
+      </container>
+
+    </container>
+  </body>
+</heml>
+  
