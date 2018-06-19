@@ -1,0 +1,245 @@
+<heml>
+  <head>
+    <subject>Email Template</subject>
+    <style>
+      body,
+      table.body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      td,
+      th,
+      a {
+        color: #0a0a0a;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        line-height: 1.3; }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: inherit;
+        word-wrap: normal;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        margin-bottom: 10px; }
+      h1 {
+        font-size: 34px; }
+      h2 {
+        font-size: 30px; }
+      h3 {
+        font-size: 28px; }
+      h4 {
+        font-size: 24px; }
+      h5 {
+        font-size: 20px; }
+      h6 {
+        font-size: 18px; }
+      body,
+      p,
+      td,
+      th {
+        font-size: 16px;
+        line-height: 19px; }
+      p {
+        margin-bottom: 10px;
+      }
+      p.lead {
+        font-size: 20px;
+        line-height: 1.6;
+      }
+      small {
+        font-size: 80%;
+        color: #cacaca; }
+      a {
+        color: #2199e8;
+        text-decoration: none; }
+      a:hover {
+        color: #147dc2; }
+      a:active {
+        color: #147dc2; }
+      a:visited {
+        color: #2199e8; }
+      body,
+      html,
+      .body {
+        background: #f3f3f3 !important;
+      }
+      .hr {
+        max-width: 600px;
+        height: 0;
+        border-right: 0;
+        border-top: 0;
+        border-bottom: 1px solid #cacaca;
+        border-left: 0;
+        margin: 20px auto;
+        clear: both;
+      }
+      .callout {
+        margin-bottom: 16px;
+        border-collapse: collapse;
+      }
+      th.callout-inner {
+        width: 100%;
+        border: 1px solid #cbcbcb;
+        padding: 10px;
+        background: #fefefe; }
+      th.callout-inner.primary {
+        background: #def0fc;
+        border: 1px solid #444444;
+        color: #0a0a0a; }
+      th.callout-inner.secondary {
+        background: #ebebeb;
+        border: 1px solid #444444;
+        color: #0a0a0a; }
+      th.callout-inner.success {
+        background: #e1faea;
+        border: 1px solid #1b9448;
+        color: #fefefe; }
+      th.callout-inner.warning {
+        background: #fff3d9;
+        border: 1px solid #996800;
+        color: #fefefe; }
+      th.callout-inner.alert {
+        background: #fce6e2;
+        border: 1px solid #b42912;
+        color: #fefefe; }
+      .expander,
+      .expander {
+        visibility: hidden;
+        width: 0;
+        padding: 0 !important; }
+      container.wrapper {
+        background: #fefefe !important;
+        padding: 0 16px;
+      }
+      container.wrapper column {
+        padding-bottom: 16px;
+      }
+      .spacer {
+        height: 16px;
+        font-size: 16px;
+        line-height: 16px;
+      }
+      .table {
+        width: 100%;
+      }
+      .text-center {
+        text-align: center;
+      }
+      container.footer column {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 16px;
+      }
+      container.footer column.first {
+        padding-left: 0;
+      }
+      container.footer column.last {
+        padding-right: 0;
+      }
+      @media only screen and (max-width: 596px) {
+        container.footer column {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <container class="wrapper">
+      <block class="spacer"></block>
+
+      <row>
+        <column>
+          <h1>Thanks for your order.</h1>
+          <p>Thanks for shopping with us! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad earum ducimus, non, eveniet neque dolores voluptas architecto sed, voluptatibus aut dolorem odio. Cupiditate a recusandae, illum cum voluptatum modi nostrum.</p>
+
+          <block class="spacer"></block>
+
+          <table class="callout">
+            <tr>
+              <th class="callout-inner secondary">
+                <row>
+                  <column large="6">
+                    <p>
+                      <strong>Payment Method</strong><br/>
+                      Dubloons
+                    </p>
+                    <p>
+                      <strong>Email Address</strong><br/>
+                      thecapn@pirates.org
+                    </p>
+                    <p>
+                      <strong>Order ID</strong><br/>
+                      239235983749636
+                    </p>
+                  </column>
+                  <column large="6">
+                    <p>
+                      <strong>Shipping Method</strong><br/>
+                      Boat (1&ndash;2 weeks)<br/>
+                      <strong>Shipping Address</strong><br/>
+                      Captain Price<br/>
+                      123 Maple Rd<br/>
+                      Campbell, CA 95112
+                    </p>
+                  </column>
+                </row>
+              </th>
+              <block class="expander"></block>
+            </tr>
+          </table>
+
+          <h4>Order Details</h4>
+
+          <table class="table">
+            <tr><th>Item</th><th>#</th><th>Price</th></tr>
+            <tr><td>Ship's Cannon</td><td>2</td><td>$100</td></tr>
+            <tr><td>Ship's Cannon</td><td>2</td><td>$100</td></tr>
+            <tr><td>Ship's Cannon</td><td>2</td><td>$100</td></tr>
+            <tr>
+              <td colspan="2"><b>Subtotal:</b></td>
+              <td>$600</td>
+            </tr>
+          </table>
+
+          <hr class="hr" heml-ignore />
+
+          <h4>What's Next?</h4>
+
+          <p>Our carrier raven will prepare your order for delivery. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi necessitatibus itaque debitis laudantium doloribus quasi nostrum distinctio suscipit, magni soluta eius animi voluptatem qui velit eligendi quam praesentium provident culpa?</p>
+        </column>
+      </row>
+      <container class="footer">
+        <row>
+          <column large="4" class="first">
+            <img src="http://placehold.it/180x30" alt="">
+          </column>
+          <column large="4">
+            <p>
+              Call us at 800.555.1923<br/>
+              Email us at support@discount.boat
+            </p>
+          </column>
+          <column large="4" class="last">
+            <p>
+              123 Maple Rd<br/>
+              Campbell, CA 95112
+            </p>
+          </column>
+        </row>
+      </container>
+
+    </container>
+  </body>
+</heml>
