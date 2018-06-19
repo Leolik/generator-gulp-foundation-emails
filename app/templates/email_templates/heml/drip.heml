@@ -1,0 +1,177 @@
+<heml>
+  <head>
+    <subject>Email Template</subject>
+    <style>
+      body,
+      table.body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      td,
+      th,
+      a {
+        color: #0a0a0a;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        line-height: 1.3; }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: inherit;
+        word-wrap: normal;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        margin-bottom: 10px; }
+      h1 {
+        font-size: 34px; }
+      h2 {
+        font-size: 30px; }
+      h3 {
+        font-size: 28px; }
+      h4 {
+        font-size: 24px; }
+      h5 {
+        font-size: 20px; }
+      h6 {
+        font-size: 18px; }
+      body,
+      p,
+      td,
+      th {
+        font-size: 16px;
+        line-height: 19px; }
+      p {
+        margin-bottom: 10px;
+      }
+      p.lead {
+        font-size: 20px;
+        line-height: 1.6;
+      }
+      small {
+        font-size: 80%;
+        color: #cacaca; }
+      a {
+        color: #2199e8;
+        text-decoration: none; }
+      a:hover {
+        color: #147dc2; }
+      a:active {
+        color: #147dc2; }
+      a:visited {
+        color: #2199e8; }
+      .hr {
+        max-width: 600px;
+        height: 0;
+        border-right: 0;
+        border-top: 0;
+        border-bottom: 1px solid #cacaca;
+        border-left: 0;
+        margin: 20px auto;
+        clear: both; }
+      body,
+      html,
+      .body {
+        background: #f3f3f3 !important;
+      }
+      button {
+        border-radius: 0;
+        font-weight: bold;
+        line-height: 19px;
+        padding: 10px 16px 10px 16px;
+        margin-bottom: 16px;
+      }
+      button.success {
+        background: #3adb76 !important;
+        border-color: #3adb76;
+      }
+      container.header {
+        background: #f3f3f3;
+      }
+      container.body-drip {
+        background: #fefefe;
+        border-top: 8px solid #663399;
+      }
+      container.body-drip column {
+        padding: 0 16px 16px;
+      }
+      .socials td{
+        padding: 10px;
+      }
+      .spacer {
+        height: 16px;
+        font-size: 16px;
+        line-height: 16px;
+      }
+      .text-center {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <container class="header">
+      <block class="spacer"></block>
+      <row class="collapse">
+        <column>
+          <img src="http://placehold.it/150x30/663399" alt="">
+        </column>
+      </row>
+      <block class="spacer"></block>
+    </container>
+
+    <container class="body-drip">
+      <block class="spacer"></block>
+
+      <center>
+        <img src="http://placehold.it/120/663399" alt="">
+      </center>
+
+      <block class="spacer"></block>
+
+      <row>
+        <column>
+          <h4 class="text-center">Responsive Emails</h4>
+          <p class="text-center">15 sections | 567 Min</p>
+        </column>
+      </row>
+      <hr class="hr" heml-ignore />
+      <row>
+        <column>
+          <p class="text-center">Hey you! It's you! Just a heads up, we just added this hot new class that will teach you how to NOT be a lame as a duck. Not the metaphorical lame duck, either, but a real duck that was actually lame, maybe from stepping on a land mine or something. Anyways, Foundation for Emails makes coding HTML emails like calling the Navy SEALS to invade a Pre-school, with pre-schoolers, armed with Crayolas.</p>
+          <center>
+            <button href="#" class="success">Get smarter now &rarrtl;</button>
+          </center>
+        </column>
+      </row>
+
+      <row class="collapsed footer">
+        <column>
+          <block class="spacer"></block>
+          <p class="text-center">@copywrite nobody<br/>
+          <a href="#">hello@nocopywrite.com</a> | <a href="#">Manage Email Notifications</a> | <a href="#">Unsubscribe</a></p>
+          <center>
+            <table class="socials">
+              <tr>
+                <td><img src="http://placehold.it/25/663399" alt="" infer></td>
+                <td><img src="http://placehold.it/25/663399" alt="" infer></td>
+                <td><img src="http://placehold.it/25/663399" alt="" infer></td>
+                <td><img src="http://placehold.it/25/663399" alt="" infer></td>
+                <td><img src="http://placehold.it/25/663399" alt="" infer></td>
+              </tr>
+            </table>
+          </center>
+        </column>
+      </row>
+
+    </container>
+  </body>
+</heml>  

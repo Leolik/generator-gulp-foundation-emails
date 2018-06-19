@@ -88,7 +88,7 @@ module.exports = class extends generators {
       type: 'confirm',
       name: 'sass',
       message: 'Would you like to use SCSS for css precompilation?',
-      default: true
+      default: false
     }]).then((answers) => {
       this.answers = { 
         ...answers,
