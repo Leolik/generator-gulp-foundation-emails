@@ -2,12 +2,18 @@
 
 > Yeoman generator for creating responsive emails using [ZURB Foundation for Emails 2 framework](http://foundation.zurb.com/emails.html).
 
+## Changelog
+
+**0.2.0**
+* added HEML support
+* build packages updated to the latest version
+
 ## Requirements
 
 * [Node.js](http://nodejs.org/)
 * [Yeoman](http://yeoman.io/)
 ```
-(sudo) npm install -g yo
+npm install -g yo
 ```
 
 ## Built-in tools
@@ -35,7 +41,7 @@
 
 ## Installation guide
 
-1. Install via npm `(sudo) npm install -g generator-gulp-foundation-emails`  
+1. Install via npm `npm install -g generator-gulp-foundation-emails`  
 2. Create folder for your project and run inside: `yo gulp-foundation-emails`  
 3. Complete installation
 
