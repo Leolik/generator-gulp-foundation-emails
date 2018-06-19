@@ -188,6 +188,12 @@
       .links td {
         padding: 10px;
       }
+      @media only screen and (max-width: 596px) {
+        .links td {
+          display: block;
+          width: 100%;
+        }
+      }
     </style>
   </head>
   <body>

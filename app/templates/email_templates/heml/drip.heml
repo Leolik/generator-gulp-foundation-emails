@@ -94,7 +94,7 @@
         background: #3adb76 !important;
         border-color: #3adb76;
       }
-      container.header {
+      container.wrapper.header {
         background: #f3f3f3;
       }
       container.body-drip {
@@ -118,7 +118,7 @@
     </style>
   </head>
   <body>
-    <container class="header">
+    <container class="wrapper header">
       <block class="spacer"></block>
       <row class="collapse">
         <column>

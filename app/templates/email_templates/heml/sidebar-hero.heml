@@ -196,13 +196,13 @@
       button.expand .button__table {
         width: 100% !important;
       }
+      .text-right {
+        text-align: right;
+      }
       .spacer {
         height: 16px;
         font-size: 16px;
         line-height: 16px;
-      }
-      .text-right {
-        text-align: right;
       }
       .links {
         text-align: center;
@@ -238,13 +238,33 @@
             <img src="http://placehold.it/200x50/663399">
           </column>
           <column small="6">
-            <p class="text-right">SIDEBAR</p>
+            <p class="text-right">SIDEBAR HERO</p>
           </column>
         </row>
       </container>
     </block>
 
     <container class="main">
+      <block class="spacer"></block>
+
+      <row>
+        <column>
+          <h1>Hi, Elijah Baily</h1>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi impedit sapiente delectus molestias quia.</p>
+          <center>
+            <img src="http://placehold.it/570x300" alt="">
+          </center>
+          <table class="callout">
+            <tr>
+              <th class="callout-inner secondary">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quas optio totam quidem, placeat sunt, sit iusto fugit. Harum omnis deleniti enim nihil iure, quis laudantium veniam velit animi debitis. <a href="#">Click It!</a>
+              </th>
+              <th class="expander"></th>
+            </tr>
+          </table>
+        </column>
+      </row>
+
       <block class="spacer"></block>
 
       <row class="content">

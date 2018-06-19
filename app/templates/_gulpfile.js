@@ -48,7 +48,7 @@ gulp.task('inline', ['styles'<% if (htmlFramework !== 'html') { %>, '<%= htmlFra
     .pipe(inlineCss({
       removeStyleTags: true,
       preserveMediaQueries: true,
-      removeLinkTags: false
+      removeLinkTags: true
     }))
     <% if (htmlFramework === "inky") { %>.pipe(replace('<!-- <style> -->', '<style>'+ mqCss +'</style>'))
     .pipe(replace('<link rel="stylesheet" type="text/css" href="styles/style.css">', ''))<% } %>
