@@ -4,6 +4,10 @@
 
 ## Changelog
 
+**0.2.1**
+* replaced `gulp-sass` to `gulp-dart-sass`
+* build packages updated to the latest version
+
 **0.2.0**
 * added HEML support
 * build packages updated to the latest version
@@ -27,7 +31,7 @@ npm install -g yo
 1. [Pug (Jade)](https://pugjs.org) template engine
 2. Inky + Panini template engine ([ZURB framework](http://foundation.zurb.com/emails.html))
 3. Pure HTML
-4. HEML (with inline css only)
+4. [HEML](https://heml.io/) (with inline css only)
 <!-- 5. Cerberus
 6. mjml -->
 
@@ -41,8 +45,8 @@ npm install -g yo
 
 ## Installation guide
 
-1. Install via npm `npm install -g generator-gulp-foundation-emails`  
-2. Create folder for your project and run inside: `yo gulp-foundation-emails`  
+1. Install via npm `npm install -g generator-gulp-foundation-emails`
+2. Create folder for your project and run inside: `yo gulp-foundation-emails`
 3. Complete installation
 
 ## Usage
